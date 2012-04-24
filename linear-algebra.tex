@@ -68,6 +68,12 @@
 \newcommand{\define}[2][]{\textbf{#2}\index{#1#2}}
 \newcommand{\definemargin}[2][]{\marginpar{#2}\define[#1]{#2}}
 
+% We aren't sure what we want to call "problems" (i.e., tasks,
+% exercises, etc.), so we make some macros for that text.
+
+\newcommand{\Prob}{Task}
+\newcommand{\prob}{task}
+
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem*{theorem*}{Theorem}
@@ -103,7 +109,7 @@
 
 %\newtheorem{problem}[theorem]{Problem}
 \theoremstyle{problem}
-\newtheorem{problemnum}{Task}
+\newtheorem{problemnum}{\Prob}
 \newenvironment{problem}[1][]{\begin{problemnum}[#1]}{\end{problemnum}\nopagebreak\hrule\bigskip}
 \newenvironment{problemtodo}[1][]{\begin{problemnum}[#1]\marginpar{\large
       \textbf{TODO}}}{\end{problemnum}\nopagebreak\hrule\bigskip}
@@ -114,6 +120,7 @@
 \newcommand{\jj}{\ensuremath{\vec \jmath}}
 \newcommand{\kk}{\ensuremath{\vec k}}
 \newcommand{\vv}{\ensuremath{\mathbf{v}}}
+\newcommand{\st}{\ensuremath{\,\mid\,}}
 \newcommand{\colvec}[1]{\ensuremath{\begin{bmatrix}#1\end{bmatrix}}}
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\rref}{rref}
@@ -145,7 +152,7 @@
 \usepackage{color}
 \usepackage[breaklinks]{hyperref}
 \hypersetup{
-  pdfborder=2,
+  pdfborder=0 0 2,
 }
 
 \begin{document}

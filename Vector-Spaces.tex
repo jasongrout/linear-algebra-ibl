@@ -39,11 +39,241 @@ series. Start emphasizing coordinate vectors more.
 
 \section{Span}
 
+\begin{definition}
+  The \definemargin{span} of a set of vectors is the set of all
+  possible linear combinations of the vectors.  In symbols,
+  \begin{equation*}
+    \vspan(\vec v_1, \vec v_2, \ldots, \vec v_n) := \{c_1\vec
+    v_1+c_2\vec v_2+\ldots c_n\vec v_n \st c_1,c_2,\ldots,c_n\in\RR\}
+  \end{equation*}
+
+  A \definemargin{vector space} is a span of vectors.  You can think
+  of a vector space as a set of vectors in which we can always take a
+  linear combination (it is \emph{closed} under linear combinations).
+
+  A set of vectors \define{spans} a set if the set is the span of the
+  vectors.
+\end{definition}
+
+\begin{problemtodo}
+  We already looked at the geometry of spans of one, two, and three
+  vectors in \Prob~\ref{prob:geometric spans in Rn}.  Look at a few
+  more spans in the other spaces.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Examine the span of some linearly dependent vectors, and compare
+  them with a corresponding basis.  Emphasize that some of the vectors
+  were redundant.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Examine two spans that turn out to be the same set of vectors.
+  Discuss why.
+\end{problemtodo}
+
+\subsection{Is this a span?}
+\label{sec:this-span}
+
+If a set is a span, then it is closed under linear combinations.
+
+\begin{problemtodo}
+  functions that vanish at a certain point.  Diagonal matrices.
+  Triangular matrices.  See the webwork problem for more ideas.  See
+  also the other linear algebra for some examples.  Either show in
+  general (and come up with a spanning set), or exhibit a specific
+  linear combination counterexample.
+\end{problemtodo}
+
+\subsection{Testing if something is in a span}
+
+\begin{problemtodo}
+  Test to see if something is in the span of a simple list of vectors,
+  say in $\RR^2$.  What is the linear combination that gives the
+  target vector?  Write a set of equations that you can solve to give
+  you the answer.  Make the answer sufficiently complicated so that
+  they can't just get it (like a fraction of one and a fraction of the
+  other).
+\end{problemtodo}
+
+\begin{definition}
+  If a vector $\vec u$ can be written as a linear combination of
+  a list of vectors $B=[v_1,v_2,\ldots,v_n]$ as $c_1\vec v_1+c_2\vec v_2+\cdots+c_n\vec
+  v_n=\vec u$, then $[\vec u]_B=(c_1,c_2,\ldots,c_n)_B$ is the \emph{coordinate
+  vector} of $\vec u$ relative to $B$ (or ``with respect to
+$B$'').\note{in this definition, I don't insist that $B$ is a basis
+  for the set. This is a bit of a departure from normal terminology,
+  but emphasizes the idea of coordinates earlier so that we can get
+  comfortable with the term early on.}
+\end{definition}
+
+\begin{problemtodo}
+  Write the coordinate vector from the problem above.  Explain what it
+  means graphically.  Explain what the solution is graphically
+  (intersection of the two lines)
+\end{problemtodo}
+
+\begin{problemtodo}
+  Do another test like above, but this time involving much harder
+  vectors, so you can't really just look at the solution and guess it.
+  Write the coordinate vector too.  [Hint: set up a system of
+  equations and solve.]  Explain what it means graphically in 3d.
+\end{problemtodo}
+
+Explain four ways of writing system of equations: equations, vector
+equations, matrix equations, and augmented matrices.
+
+\begin{problemtodo}
+  Write the system in the previous problem in these 4 ways.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Make one of the vectors the zero vector.  Ask for two coordinate vectors
+\end{problemtodo}
+
+\begin{problemtodo}
+  Make the vectors linearly dependent (but not zero).  Ask for two coordinate vectors.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Ask for a solution where there is no solution.
+\end{problemtodo}
+
+Emphasize that there will either be no solution, one solution, or an
+infinite number of solutions. (if there are two solutions, then their
+average is a solution, and any other point on the line connecting the
+two solutions is also a solution).
+
+\begin{problemtodo}
+  Is the set of coordinate vectors a subspace for a homogeneous
+  system?
+\end{problemtodo}
+
+\begin{problemtodo}
+  Is the set of coordinate vectors a subspace for a nonhomogeneous system?
+\end{problemtodo}
+
+\subsection{Solving systems of linear equations}
+\label{sec:solv-syst-line}
+The sorts of systems we encountered in the last few \prob{}s are
+systems of linear equations.  The linear equations we will be solving
+are primarily to determine of a certain vector is in the span of some
+other vectors, and if so, what the possible coefficients are.
+
+\begin{definition}
+  A system of linear equations is...  A linear equation is...
+\end{definition}
+
+\begin{problemtodo}
+  Ask to solve two equivalent systems; one the rref of the other.
+\end{problemtodo}
+
+There are a series of operations we can do to simplify systems of
+equations, but still have the same solution.
+
+\begin{problemtodo}
+  Graphically represent each of three operations.
+\end{problemtodo}
+
+Gaussian elimination algorithm, and practice it a few times.
+Concentrate on following the specific sequence of steps and explain
+why that helps you not undo work (zeroing) that you had previously done.
+
+\begin{problemtodo}
+  Solve a homogeneous system
+\end{problemtodo}
+
+\begin{problemtodo}
+  Solve a corresponding nonhomogeneous system.  Point out that the
+  solution is always a vector from the homogeneous solution plus a
+  particular solution.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Polynomial interpolation application
+\end{problemtodo}
+
+\begin{problemtodo}
+  LU Decomposition application?
+\end{problemtodo}
+
 \section{Linear Independence}
+
+\begin{problemtodo}
+  Repeat a problem where there are multiple solutions to solve for the
+  zero vector.  Can we write one of the vectors as a linear
+  combination of the others?
+\end{problemtodo}
+
+\begin{problemtodo}
+  Do a problem where there is just one solution to a homogeneous
+  equation.  Can we write one of the vectors as a linear combination
+  of the others?  Are there multiple answers?
+\end{problemtodo}
+
+\begin{definition}
+  A set of vectors is \definemargin{linearly independent} if ...
+\end{definition}
 
 \section{Bases}
 
+\begin{problemtodo}
+  Size of spanning set can't be too small.  Show that any spanning set
+  of $\RR^3$ has at least three vectors, maybe.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Size of linearly independent set can't be too big.  Show that any
+  linearly independent set in $\RR^3$ has at most 3 vectors.
+\end{problemtodo}
+
+\begin{definition}
+  A \definemargin{basis} is a set that is both linearly independent
+  and spans a set.  A basis spans the space, but doesn't have
+  redundant vectors.  It is a ``smallest'' spanning set.
+\end{definition}
+
+\begin{problemtodo}
+  All bases have the same size.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Find a basis for $\RR^2$, $\RR^3$, and some other spaces (maybe
+  relying on previous problems?).  Write some coordinate vectors
+  relative to these bases.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Uniqueness of coordinate vectors when you have a basis.
+\end{problemtodo}
+
+\begin{problemtodo}
+  Building a basis from a spanning set
+\end{problemtodo}
+
+\begin{problemtodo}
+  Building a basis from a linearly independent set
+\end{problemtodo}
+
 \section{Generalizing Operations}
+
+List the properties (or maybe we should have them verify the
+properties for a few spaces).
+
+\begin{problemtodo}
+  What if one of the properties wasn't true?
+\end{problemtodo}
+
+\begin{problemtodo}
+  Examine the semi-log space.  What is the zero vector and additive inverses?
+\end{problemtodo}
+
+\begin{problemtodo}
+  In the semilog space, was $0\vec v=\vec 0$?  Show this is true in
+  general from the axioms.  Was $(-1)\vec v=-\vec v$?  Show it is true
+  in general.  The idea of this problem is to help them see that the
+  axioms are important for the operations to be intuitive and nice.
+\end{problemtodo}
 
 %%% Local Variables: 
 %%% mode: latex
