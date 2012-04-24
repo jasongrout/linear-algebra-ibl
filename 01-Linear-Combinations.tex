@@ -16,12 +16,91 @@ Do each of these in $\RR^n$, $P_n$, $\RR^{m\times n}$, and formal power
 
 \section{Vectors in $\RR^n$}
 
+\begin{definition}\note{More weird examples of vector spaces on
+    \href{http://math.stackexchange.com/questions/5233/vivid-examples-of-vector-spaces}{MathOverflow}
+    (and
+    \href{http://math.stackexchange.com/questions/37871/non-numerical-vector-space-examples}{here}
+    and \href{http://math.stackexchange.com/questions/4694/what-are-some-alternative-definitions-of-vector-addition-and-scalar-multiplicati}{here}.}
+  The word ``vector'' means different things in different contexts:
+  \begin{enumerate}
+  \item A vector in $\RR^n$ is a list of $n$ real numbers.
+  \item A vector in $\RR^{m\times n}$ is a table of real numbers with
+    $n$ rows and $m$ columns.  Such a table of real numbers is called
+    an $m$ by $n$ \emph{matrix}.  Sometimes $\RR^{m\times n}$ is also
+    written as $M_{m,n}$.
+  \item A vector in $P_n[x]$ is a polynomial of degree less than or equal
+    to $n$ with variable $x$.
+  \item A vector in $P[[x]]$ is a formal power series (polynomial with
+    infinite degree).
+  \end{enumerate}
+\end{definition}
+
 \begin{problem}
-  First Problem.
+  Do the following:
+  \begin{enumerate}
+  \item Give two examples of vectors in $\RR^3$ and two examples
+    of vectors in $\RR^5$.
+  \item Give two examples of vectors in $\RR^{2\times 3}$ and two
+    examples of vectors in $\RR^{3\times 3}$.
+  \item Give two examples of vectors in $P_2[x]$ and two examples
+    of vectors in $P_3[x]$.  Is there a vector in $P_2[x]$ that is
+    also a vector in $P_3[x]$?
+  \item Give two examples of vectors in $\RR[[x]]$.
+  \end{enumerate}
 \end{problem}
 
+\begin{definition}[Operations]
+  In each of $\RR^n$, $\RR^{m\times n}$, $P_n[x]$, and $\RR[[x]]$, we
+  can add two vectors by adding each part separately and we can multiply a
+  vector by a scalar (a real number) by taking the number times each component.
+\end{definition}
+
+\begin{example}
+  We show each operation.
+  \begin{enumerate}
+  \item For vectors in $\RR^2$, $(2,3)+(4,-2)=(6,1)$ and $3(2,-1)=(6,-1)$.
+  \item For vectors in $\RR^{2\times 3}$, 
+    \begin{align*}
+      \mat{2&3&5\\1&-2&0}+\mat{4&-1&-3\\2&4&6}=\mat{6&2&2\\3&2&6}\text{,
+        and}\\
+      -2\mat{2&3&5\\1&-2&0}=\mat{-4&-6&-10\\-2&4&0}.
+      \end{align*}
+    \item For vectors in $P_3[x]$,
+      $(1+x+2x^3)+(2x-x^2-x^3)=(1+3x+x^2)$ and
+      $3(1+x-2x^3)=(3+3x-6x^3)$.
+    \item For vectors in $\RR[[x]]$,
+      \begin{align*}
+        (1+x+x^2+x^3+\cdots) + (1-x+x^2-x^3+\cdots) =
+        (2+2x^2+2x^4+\cdots),\\
+        3(x+2x^2+3x^3+\cdots)=3x+6x^2+9x^3+\cdots
+      \end{align*}
+  \end{enumerate}
+\end{example}
+
+\begin{problemtodo}
+  Examine the geometry of $c\vec v$, $-\vec u$, $\vec u + \vec v$, and $\vec
+  u-\vec v$ in $\RR^2$.
+\end{problemtodo}
+
+\begin{definition}
+  Let $c_1,c_2,\ldots,c_n$ be scalars (in other words,
+  $c_1,c_2,\ldots,c_n$ are real numbers).  A \definemargin{linear
+    combination} of vectors $\vec v_1,\, \vec v_2,\, \ldots,\, \vec
+  v_n$ is a weighted sum $c_1\vec v_1+c_2\vec v_2+\cdots+c_n\vec v_n$.
+\end{definition}
+
+\begin{problemtodo}
+  Do some linear combinations in each of the vector spaces
+\end{problemtodo}
+
+\begin{problemtodo}
+  Represent a real problem as a vector in $\RR^4$ (like quantities of
+  different merchandise).  Give a situation where you have a linear
+  combination (like production from two suppliers).  Emphasize that
+  having a vector with 4 elements is not a problem.
+\end{problemtodo}
 
 %%% Local Variables: 
 %%% mode: latex
-%%% TeX-master: "linear-algebra-ibl"
+%%% TeX-master: "linear-algebra"
 %%% End: 
