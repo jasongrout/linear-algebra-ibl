@@ -98,14 +98,15 @@
 \newtheorem{observation}[theorem]{Observation}
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{example}[theorem]{Example}
-\newtheorem{prb}[theorem]{Problem}
 \newtheorem{question}[theorem]{Question}
 \newtheorem*{prep-problems}{Preparation Problems}
 
 %\newtheorem{problem}[theorem]{Problem}
 \theoremstyle{problem}
-\newtheorem{problemnum}[theorem]{Problem}
+\newtheorem{problemnum}{Task}
 \newenvironment{problem}[1][]{\begin{problemnum}[#1]}{\end{problemnum}\nopagebreak\hrule\bigskip}
+\newenvironment{problemtodo}[1][]{\begin{problemnum}[#1]\marginpar{\large
+      \textbf{TODO}}}{\end{problemnum}\nopagebreak\hrule\bigskip}
 
 
 % Abbreviations
