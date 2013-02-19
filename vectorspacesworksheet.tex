@@ -1,0 +1,53 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+\begin{document}
+\newcommand{\vecspan}[1]{\mathrm{span}(#1)}
+\begin{center}{\centerline\large Vector Spaces}
+
+{\centering\large 18 Feb 2013, Jason Grout, Math 80}
+\end{center}
+\bigskip
+
+Which of the following sets are vector spaces (i.e., spans)?  Do the following for each set below:
+
+\begin{itemize}
+\item Write 3 elements of the set (if possible)
+\item If the set is a vector space, write the set as a span of some vectors in the space (i.e., ``parametrize'' the set).  
+\item If the set is not a vector space, give a specific example showing that the set is not closed under vector addition or not closed under scalar multiplication.
+\end{itemize}
+
+\begin{enumerate}
+\item ``vector'' is a matrix
+  \begin{enumerate}
+  \item All matrices with 3 rows and 2 columns (i.e., all $3\times 2$ matrices)
+  \item All $3\times 3$ matrices where every entry not on the diagonal is zero
+  \item All $3\times 3$ matrices where every entry below the diagonal is zero
+  \item All $3\times 3$ matrices that are symmetric (ask me what this means)
+  \item All $3\times 3$ matrices that have an RREF of $\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}$
+  \item All $2\times 2$ matrices $\begin{bmatrix}a&b\\c&d\end{bmatrix}$ where $a+d=0$
+  \item All $2\times 2$ matrices $\begin{bmatrix}a&b\\c&0\end{bmatrix}$ where $a+b+c=0$
+  \item The single $2\times 2$ zero matrix
+\end{enumerate}
+\item ``vector'' is a polynomial
+  \begin{enumerate}
+  \item All polynomials with degree at most 2
+  \item All polynomials with degree exactly 2
+  \item All polynomials with degree at most 3 and having integer coefficients
+  \item All polynomials with the form $\{a+ct^2\mid a,c\in\mathbb{R}\}$
+  \item All polynomials of the form $a+bt+ct^2$ where $a+c=5$.
+  \item All polynomials with degree at least 2
+  \item All polynomials (with any degree)
+  \end{enumerate}
+\item ``vector'' is a real function (takes in one number, gives back one number)
+  \begin{enumerate}
+  \item All real functions where $f(0)=0$
+  \item All real differentiable functions where $f'(0)=1$
+  \item The single function $f(x)=0$
+\end{enumerate}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+\begin{document}
+\newcommand{\vecspan}[1]{\mathrm{span}(#1)}
+\begin{center}{\centerline\Large Math 80}
+
+{\centering\large 6 Feb 2013, Jason Grout}
+\end{center}
+
+The \emph{span} of a set of vectors is the set of all linear combinations of the set of vectors.  For example, $\vecspan{\vec v_1,\vec v_2,\vec v_3}=\{c_1\vec v_1+c_2\vec v_2+c_3\vec v_3 \mid c_1,c_2,c_3\in\mathbb{R}\}$.
+
+\begin{enumerate}
+\item For each of the sets of vectors below, give 3 different vectors (if possible) in the set.  Also, draw and describe what the entire set looks like geometrically (e.g., a line, a plane, etc.).
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\vecspan{(1,2)}$ in $\mathbb{R}^2$
+\item $\vecspan{(1,2),(1,-1)}$ in $\mathbb{R}^2$
+\item $\vecspan{(1,2),(2,4)}$ in $\mathbb{R}^2$
+\item $\vecspan{(1,2),(1,-1), (2,1)}$ in $\mathbb{R}^2$
+
+
+\item $\vecspan{(1,0,-1)}$ in $\mathbb{R}^3$
+\item $\vecspan{(1,0,-1), (1,0,1)}$ in $\mathbb{R}^3$
+\item $\vecspan{(1,0,-1), (1,0,1), (0,0,2)}$ in $\mathbb{R}^3$
+\item $\vecspan{(1,0,-1), (1,0,1), (1,1,0)}$ in $\mathbb{R}^3$
+
+\item $\vecspan{(3)}$ in $\mathbb{R}^1$
+\item $\vecspan{(0,0)}$ in $\mathbb{R}^2$
+\item $\vecspan{(0,0,0)}$ in $\mathbb{R}^3$
+\end{multicols}
+\end{enumerate}
+
+\item We saw above that understanding the span depended on knowing if a vector was in the span of some other vectors.  Here we'll tackle that problem.  Write a system of linear equations, one for each component of the vectors, that must be true if $(2,1,0)\in\vecspan{(3,4,2), (1,2,0)}$.  
+Also write the corresponding augmented matrix and solve the system (use a calculator or ask me for the RREF).
+\item Write a system of equations that must be satisfied if $(-37, -6, -12)\in\vecspan{(-8,3,-3), (7,4,2)}$.
+Also write the corresponding augmented matrix and solve the system (use a calculator or ask me for the RREF).
+\item Interpret the following system of equations in terms of finding a vector in the span of other vectors.  Solve the system (use a calculator or ask me for the RREF) and interpret your answer.
+
+  \begin{enumerate}
+  \item   \begin{align*}
+    x-y+z&=5\\
+     y-z&=2\\
+    3x+2y-2z&=-3
+  \end{align*}
+\item   \begin{align*}
+    5x-y+18z&=53\\
+-4x-3y-9z&=-24\\
+2x-y+8z&=24
+  \end{align*}
+
+
+\item 
+  \begin{align*}
+x+2y-3z&=-2\\
+-2x-3y+5z&=2\\
+5x+14y-19z&=-18\\
+  \end{align*}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
